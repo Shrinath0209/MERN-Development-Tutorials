@@ -5,5 +5,5 @@ app.listen(8080, () =>{
 });
 app.get("/", (req, res) => {
  
-  res.send("hello" + req.query.name + req.query.age);
+  res.send("hello" + req.query.name + req.query.age); //http://localhost8080/?name=john&age=21
 });
