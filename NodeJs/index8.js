@@ -31,7 +31,7 @@ app.post("/", (request, response) => {
 //   console.log(request.body);
   const user = request.body
   users.push(user)
-  response.json(users);
+  response.status(201).json(users);
 });
 
 app.delete("/:id",(request,response)=>{
